@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Fotke</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div id="btn">
+	<input type="button" value="Show photo" onClick="slika(1)">
+	<input type="button" value="Show photo" onClick="slika(2)">
+	<input type="button" value="Show photo" onClick="slika(3)">
+</div>
+
+	<div id="okvir">
+	</div>
+
+
+	<script>
+
+		var okvir = document.getElementById("okvir");
+
+
+		function slika(a) {
+			okvir.innerHTML = '<img src="slika' + a + '.png" alt="slika1">';
+		}
+
+
+
+	</script>
+</body>
+
+</html>
